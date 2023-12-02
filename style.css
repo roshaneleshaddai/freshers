@@ -1,0 +1,123 @@
+body{
+    margin: 5px;
+    margin-right: 5px;
+    padding: 0;
+    /*background: linear-gradient(to right, #FFD700, #022c03);*/
+    font-family: 'Lucida Calligraphy';
+    font-weight:400;
+    align-items: center;
+    color:#000;
+    justify-content: center;
+    background-image: url("./Beige\ And\ Gold\ Floral\ Wedding\ Invitation.png");
+    background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+.title {
+     
+    font-family: 'Lucida Handwriting';
+    /*background-color:rgb(48, 5, 70);*/
+    overflow: hidden;
+    width: 99.2%;
+    z-index: 1000;
+    color:#6B240C;
+    text-align: center;
+    font-weight: 700;
+    font-size:x-large;
+}
+.coming-soon-container {
+    text-align: center;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.countdown-box {
+    margin: 0 3px;
+    padding: 10px;
+    background-color: white;
+    /*border: 2px solid rgb(48, 5, 70);*/
+    border-radius: 15px;
+}
+.reel{
+    text-align: center;
+}
+.container{
+    text-align: center;
+    cursor: pointer;
+    width: 250px;
+    /*border: 2px solid rgb(48, 5, 70);
+    background-color:rgb(48, 5, 70); */
+    border-radius: 12px;
+    margin-bottom: 15px;
+    height: 200px;
+    transition: transform 0.7s ease-in-out;
+}
+.containers{
+    font-family: 'Lucida Handwriting';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container:hover{
+    cursor:none;
+    background-color:#9FBB73;
+    color:white; 
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px rgb(76, 73, 73);
+}
+sol{
+    color: rgb(48, 5, 70);;
+}
+.bottom-section {
+   /* background-color:rgb(48, 5, 70);*/
+
+    padding: 40px 10px;
+    text-align: center;
+    width:100%;
+    /*border: 1px solid rgb(85, 54, 113);*/
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+  }
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+}
+
+.contact-info {
+    margin-left: 20px;
+    text-align: center;
+    cursor:all-scroll;
+}
+
+  /* Style for the social icons */
+.social-icons {
+    margin-top: 20px;
+  }
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+.social-icons a:hover {
+    background-color: #ddd; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+    border: 2px solid white;
+    border-radius: 12px;
+  }  
