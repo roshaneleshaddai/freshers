@@ -9,7 +9,7 @@ body{
     color:#000;
     justify-content: center;
     background-image: url("./Beige\ And\ Gold\ Floral\ Wedding\ Invitation.png");
-    background-size:auto;
+    background-size:contain;
       background-position: center;
       background-repeat: no-repeat;
 }
