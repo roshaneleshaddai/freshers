@@ -8,11 +8,12 @@ body {
     align-items: center;
     color: #000;
     justify-content: center;
-    background-image: url("./Beige\ And\ Gold\ Floral\ Wedding\ Invitation.png");
-    background-size: auto;
+    background-image: url("image.jpeg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 
 .title {
     font-family: 'Lucida Handwriting';
@@ -124,7 +125,8 @@ body {
 /* Add media query for screens smaller than 600px */
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 14px; /* Adjust font size for smaller screens */
+        font-size: 14px;
+ background-size: 100% 100%; /* Adjust font size for smaller screens */
     }
 
     .title {
