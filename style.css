@@ -4,16 +4,15 @@ body {
     padding: 0;
     /* background: linear-gradient(to right, #FFD700, #022c03); */
     font-family: 'Lucida Calligraphy', sans-serif;
+background-image:url("image.jpeg");
     font-weight: 400;
     align-items: center;
     color: #000;
     justify-content: center;
-    background-image: url("image.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-
 
 .title {
     font-family: 'Lucida Handwriting';
@@ -126,7 +125,7 @@ body {
 @media only screen and (max-width: 600px) {
     body {
         font-size: 14px;
- background-size: 100% 100%; /* Adjust font size for smaller screens */
+        background-size: 100% 100%; /* Adjust font size for smaller screens */
     }
 
     .title {
@@ -149,4 +148,59 @@ body {
     .bottom-section {
         padding: 20px 10px; /* Adjust padding for smaller screens */
     }
+}
+
+/* Styles for the form and input container */
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.input-container {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styles for the surprise section */
+.surprise-section {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.surprise-section p {
+    margin: 0;
+}
+/* Additional styles for boxes around WHEN, WHERE, TIME, and EVENTS */
+.container.box {
+    border: 2px solid #6B240C;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
