@@ -1,25 +1,27 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const countDownDate = new Date("Dec 7, 2023 09:00:00").getTime();
+const daysElement = document.getElementById('days');
+const hoursElement = document.getElementById('hours');
+const minutesElement = document.getElementById('minutes');
+const secondsElement = document.getElementById('seconds');
 
-    const x = setInterval(function () {
-        const now = new Date().getTime();
+function updateTimer() {
+    const futureDate = new Date("2023-12-07T09:00:00");
+    const currentDate = new Date();
+    const timeDifference = futureDate - currentDate;
 
-        const distance = countDownDate - now;
+    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    daysElement.textContent = formatTime(days);
+    hoursElement.textContent = formatTime(hours);
+    minutesElement.textContent = formatTime(minutes);
+    secondsElement.textContent = formatTime(seconds);
+}
 
-        document.getElementById("days").innerText = days < 10 ? "0" + days : days;
-        document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
-        document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
-        document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+function formatTime(time) {
+    return time < 10 ? 0${time} : time;
+}
 
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("timer").innerHTML = "EXPIRED";
-        }
-    }, 1000);
-});
-
+// Update the timer every second
+setInterval(updateTimer, 1000);
